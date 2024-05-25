@@ -1,0 +1,3353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>979</width>
+    <height>755</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>981</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(251, 244, 229);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Logo_Bibliothèque_pour_Tous.svg.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_ajouter_etudiant">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="label_80">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 128, 128);
+color: rgb(253, 239, 220);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Ajouter un étudiant</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>130</y>
+        <width>341</width>
+        <height>443</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_2">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Numéro inscription</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="num_input"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="nom_input"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Prénom</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="prenom_input"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Date de naissance</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="date_naissance_input">
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Normal</enum>
+         </property>
+         <property name="cursorPosition">
+          <number>0</number>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Adresse</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="adresse_input"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Mail</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="mail_input"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Téléphone</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="telephone_input"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>section</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="section_input"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Niveau étude</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLineEdit" name="niveau_etude_input"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="ajouter_etudiant_botton">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>540</y>
+        <width>101</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>ajouter</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_supp_etudiant">
+     <widget class="QPushButton" name="Button_supprimer_etudiant">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>220</y>
+        <width>131</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_85">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;color: rgb(253, 239, 220);
+</string>
+      </property>
+      <property name="text">
+       <string>   Suppression d'un étudiant donné</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>180</y>
+        <width>371</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_3">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_65">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Numéro inscription</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="num_input_supprimer"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_supp_etudiants_section">
+     <widget class="QPushButton" name="Button_supprimer_section">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>220</y>
+        <width>131</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_116">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Suppression des étudiants d'une section donnée</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>180</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_66">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>section</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="section_input_supprimer"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_supp_etudiants_niveau">
+     <widget class="QPushButton" name="Button_supprimer_niveau">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>250</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_172">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Suppression des étudiants d'un niveau donnée</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>210</y>
+        <width>351</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_5">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_67">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Niveau étude</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="niveau_input_supprimer"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_supp_etudiants_section_niveau">
+     <widget class="QPushButton" name="Button_supprimer_sectionniveau">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>270</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_173">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Suppression des étudiants d'une section et un niveau donnés</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>180</y>
+        <width>371</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_6">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_93">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>section</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="sectionmix_input_syupprimer"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="niveau_etudemic_input_supprimer"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_92">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Niveau étude</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_modifier_telephone_etudiant">
+     <widget class="QPushButton" name="pushButton_modifer">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>270</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_174">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Modifier Telephone d'un étudiant </string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>180</y>
+        <width>371</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_7">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_29">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Numéro inscription</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_52">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Téléphone</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="num_modifier"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="telephone_modifier"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_modifier_adresse_etudiant">
+     <widget class="QPushButton" name="pushButton_modifer_2">
+      <property name="geometry">
+       <rect>
+        <x>472</x>
+        <y>270</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_175">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Modifier Adresse d'un étudiant </string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>180</y>
+        <width>371</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_8">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_30">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Numéro inscription</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="num_modifier_2"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="adresse_modifer"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_51">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Adresse</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_modifier_mail_etudiant">
+     <widget class="QPushButton" name="pushButton_modifer_3">
+      <property name="geometry">
+       <rect>
+        <x>462</x>
+        <y>270</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_176">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Modifier Mail d'un étudiant </string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>190</y>
+        <width>371</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_9">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="num_modifier_3"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_31">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Numéro inscription</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_50">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Mail</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="mail_modifer"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_etudiants">
+     <widget class="QPushButton" name="affiche_dictionnaire">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>150</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Afficher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_177">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   dictionnaire étudiants</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_etudiants">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>191</y>
+        <width>951</width>
+        <height>501</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_etudiant_num">
+     <widget class="QPushButton" name="pushButton_recherchenum">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>210</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_178">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche par numéro inscription</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>160</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_94">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Numéro inscription</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="num_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_etudiants_num">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>951</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_etudiant_section">
+     <widget class="QPushButton" name="pushButton_recherchesection">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>210</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_179">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche par Section</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>160</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_95">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Section</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="section_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_etudiants_section">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>951</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_etudiant_niveau">
+     <widget class="QPushButton" name="pushButton_rechercheniveau">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>200</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_180">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche par Niveau</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>150</y>
+        <width>301</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_96">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Niveau étude</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="niveau_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_etudiants_niveau">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>951</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_etudiant_section_niveau">
+     <widget class="QPushButton" name="pushButton_recherchenivetsect">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>250</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_181">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche par Section et Niveau</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>170</y>
+        <width>391</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_10">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_98">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>section</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_97">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Niveau étude</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="sectionmix_input_recherche"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="niveau_etudemix_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_etudiants_mix">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>290</y>
+        <width>951</width>
+        <height>411</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_ajouter_livre">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QPushButton" name="ajouter_livre_botton">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>440</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>ajouter</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_182">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Ajouter un livre</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>260</y>
+        <width>431</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_11">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Référence</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Titre</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Nom et Prénom d'auteur</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Année édition</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="reference_input"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="titre_input"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="auteur_input"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="annee_edition_input"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_supp_livre">
+     <widget class="QPushButton" name="Button_supprimer_livre">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>280</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_183">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Supprimer un livre donné</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>230</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_69">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Référence</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="reference_input_supprimer"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_supp_livre_annee">
+     <widget class="QPushButton" name="Button_supprimer_annee_edition">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>310</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_261">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Supprimer des livres d'une année donné</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>260</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_70">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Année</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="annee_edition_input_supprimer"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_supp_livre_auteur">
+     <widget class="QPushButton" name="Button_supprimer_auteur">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>280</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_262">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Supprimer des livres d'un auteur donné</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>230</y>
+        <width>351</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_79">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Nom d'auteur</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="auteur_input_supprimer"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_livres">
+     <widget class="QPushButton" name="affiche_dictionnaire_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>130</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Afficher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_263">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>  dictionnaire livres</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_livres">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>951</width>
+        <height>521</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_livre_reference">
+     <widget class="QPushButton" name="pushButton_recherchereference">
+      <property name="geometry">
+       <rect>
+        <x>432</x>
+        <y>200</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_264">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche par Référence</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>150</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_99">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Référence</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="reference_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_livres_ref">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>951</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_livre_titre">
+     <widget class="QPushButton" name="pushButton_recherchetitre">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>200</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_265">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche par Titre</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>150</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_100">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Titre</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="titre_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_livres_titre">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>951</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_livre_auteur">
+     <widget class="QPushButton" name="pushButton_rechercheauteur">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>190</y>
+        <width>131</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_266">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche des livres d'un auteur donné</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>140</y>
+        <width>481</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <widget class="QLabel" name="label_102">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Nom et Prénom d'auteur</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="auteur_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_livres_auteur">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>951</width>
+        <height>461</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_livre_annee">
+     <widget class="QPushButton" name="pushButton_rechercheanneeedition">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>210</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_267">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche livres par Année édition donnée</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>160</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <widget class="QLabel" name="label_101">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Année </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="annee_edition_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_livres_annee">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>951</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_emprunter">
+     <widget class="QPushButton" name="ajouter_emprunt_botton">
+      <property name="geometry">
+       <rect>
+        <x>462</x>
+        <y>300</y>
+        <width>91</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>ajouter</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_268">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Ajouter un nouvel emprunt</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>170</y>
+        <width>391</width>
+        <height>117</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_12">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_18">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Numéro d'inscription</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_20">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Référence</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_19">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Date d'emprunt</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="num_emprunt_input"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="reference_emprunt_input"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="date_emprunt_input"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_retourner">
+     <widget class="QPushButton" name="retour_emprunt_botton">
+      <property name="geometry">
+       <rect>
+        <x>462</x>
+        <y>310</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>retourner</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_269">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Retour d'un emprunt</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_12">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>180</y>
+        <width>401</width>
+        <height>117</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_13">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_22">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Numéro d'inscription</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_23">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Référence</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_21">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Date de retour</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="num_retour_input"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="reference_retour_input"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="date_retour_input"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_supp_emprunt">
+     <widget class="QPushButton" name="supprimer_emprunt_botton">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>300</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_270">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Supprimer d'un emprunt</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_13">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>210</y>
+        <width>371</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_14">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_25">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Numéro d'inscription</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_24">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Référence</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="num_emprunt_supprimer_input"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="reference_emprunt_supprimer_input"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_modifier_emprunt_date">
+     <widget class="QPushButton" name="modifier_emprunt_botton">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>330</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_271">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Modifier date d'emprunt</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_14">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>240</y>
+        <width>381</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_15">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_27">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Référence</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_26">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Date d'emprunt</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="reference_emprunt_modifier_input"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="date_emprunt_modifier_input"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_modifier_retour_date">
+     <widget class="QPushButton" name="modifier_emprunt_botton_2">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>350</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_272">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Modifier date de retour</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_15">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>240</y>
+        <width>351</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_16">
+       <property name="verticalSpacing">
+        <number>17</number>
+       </property>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_32">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Référence</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="reference_emprunt_modifier_input_2"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_28">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Date de retour</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="date_retour_modifier_input"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_emprunts">
+     <widget class="QPushButton" name="afficher_botton_dictionnaire_emprunt">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>160</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Afficher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_273">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   dictionnaire emprunts</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_emprunts">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>951</width>
+        <height>491</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_emprunt_livre">
+     <widget class="QPushButton" name="pushButton_recherchereference_emprunt">
+      <property name="geometry">
+       <rect>
+        <x>462</x>
+        <y>190</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_274">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche par livre</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>150</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <item>
+        <widget class="QLabel" name="label_105">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>livre reference</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="reference_emprunt_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_emprunts_livre">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>951</width>
+        <height>461</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_emprunt_etudiant">
+     <widget class="QPushButton" name="pushButton_rechercheetudiant_emprunt">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>210</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_275">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche par etudiant</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_12">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>170</y>
+        <width>361</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <item>
+        <widget class="QLabel" name="label_107">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>etudiant num</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="etudiant_emprunt_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_emprunts_etudiant">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>951</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_emprunt_date">
+     <widget class="QPushButton" name="pushButton_recherchedate_emprunt">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>200</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_276">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche des livres empruntés à une date donnée</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_13">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>160</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <widget class="QLabel" name="label_108">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>date emprunt</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="date_emprunt_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_emprunts_date">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>951</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_retourner_livre">
+     <widget class="QPushButton" name="pushButton_recherchedate_retour">
+      <property name="geometry">
+       <rect>
+        <x>462</x>
+        <y>210</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_277">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche des livres retournés à une date donnée</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_14">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>170</y>
+        <width>321</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_14">
+       <item>
+        <widget class="QLabel" name="label_110">
+         <property name="styleSheet">
+          <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+         </property>
+         <property name="text">
+          <string>date retour</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="date_retour_input_recherche"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_retour_date">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>951</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_emprunt_2dates">
+     <widget class="QPushButton" name="pushButton_recherche_date1_emprunt">
+      <property name="geometry">
+       <rect>
+        <x>432</x>
+        <y>180</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_112">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>140</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+      </property>
+      <property name="text">
+       <string>date debut</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="datefin_emprunt_input_recherche">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>140</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="datedebut_emprunt_input_recherche">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>140</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_113">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>140</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+      </property>
+      <property name="text">
+       <string>date fin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_278">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche des livres empruntés entre 2 dates données</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_emprunts_2dates">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>951</width>
+        <height>471</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_afficher_retourner_2dates">
+     <widget class="QLabel" name="label_114">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>140</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+      </property>
+      <property name="text">
+       <string>date fin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_115">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>140</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;</string>
+      </property>
+      <property name="text">
+       <string>date debut</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="datedebut_retour_input_recherche_">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>140</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_recherche_date2_emprunt">
+      <property name="geometry">
+       <rect>
+        <x>432</x>
+        <y>180</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="datefin_retour_input_recherche">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>140</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_279">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>   Recherche des livres retournés entre 2 dates données</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_retour_2dates">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>220</y>
+        <width>951</width>
+        <height>471</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="label_280">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(253, 239, 220);background-color: rgb(0, 128, 128);
+font: 75 16pt &quot;Rockwell&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>  dictionnaire livres par ordre alphabetique</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="affiche_dictionnaire_alphabetique">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>130</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;
+font: 63 9pt &quot;Segoe UI Variable Display Semib&quot;;
+  border-radius: 10px;
+  padding: 0 8px;
+  
+color: rgb(0, 128, 128);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Afficher</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_livres_alphabetique">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>951</width>
+        <height>521</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>979</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menudfzf">
+    <property name="title">
+     <string>MENU ETUDIANTS</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_des_tudiants">
+     <property name="title">
+      <string>Mise à jour des étudiants</string>
+     </property>
+     <widget class="QMenu" name="menuSupprimer_tudiant">
+      <property name="title">
+       <string>Supprimer étudiant</string>
+      </property>
+      <addaction name="actionSuppression_tudiant_donn"/>
+      <addaction name="actionSuppression_des_tudiants_d_une_section_donn"/>
+      <addaction name="actionSuppression_des_tudiants_d_un_niveau_donn"/>
+      <addaction name="actionSuppression_des_tudiants_d_une_section_et_un_niveau"/>
+     </widget>
+     <widget class="QMenu" name="menuModifier_tudiant">
+      <property name="title">
+       <string>Modifier étudiant</string>
+      </property>
+      <addaction name="actionT_l_phone"/>
+      <addaction name="actionMail"/>
+      <addaction name="actionAdresse"/>
+     </widget>
+     <addaction name="actionAjouter_tudiant"/>
+     <addaction name="menuSupprimer_tudiant"/>
+     <addaction name="menuModifier_tudiant"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_Affichage">
+     <property name="title">
+      <string>Recherche ,Affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnnaire_tudiants"/>
+     <addaction name="actionRecherche_par_num_rp_inscription"/>
+     <addaction name="actionRecherche_par_section"/>
+     <addaction name="actionRecherche_par_niveau"/>
+     <addaction name="actionRecherche_par_section_et_niveau"/>
+    </widget>
+    <addaction name="menuMise_jour_des_tudiants"/>
+    <addaction name="menuRecherche_Affichage"/>
+   </widget>
+   <widget class="QMenu" name="menuMENU_GETION_DES_LIVRES">
+    <property name="title">
+     <string>MENU LIVRES</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuSupprimer_un_livre">
+      <property name="title">
+       <string>Supprimer un livre</string>
+      </property>
+      <addaction name="actionSuppression_livre_donn"/>
+      <addaction name="actionSuppression_livres_d_un_auteur_donn"/>
+      <addaction name="actionSuppression_livres_d_une_ann_e_donn"/>
+     </widget>
+     <addaction name="actionAjouter_un_nouvel_livre"/>
+     <addaction name="menuSupprimer_un_livre"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_Affichage_2">
+     <property name="title">
+      <string>Recherche ,Affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnnaire_LIVRE"/>
+     <addaction name="actionRecherche_par_R_f_rence"/>
+     <addaction name="actionRecherche_par_titre"/>
+     <addaction name="actionRecherche_livres_par_ann_e_dition_donn_e"/>
+     <addaction name="actionRecherche_livres_d_un_auteur_donn"/>
+     <addaction name="actionAffichage_des_livres_par_ordre_alphab_tique"/>
+    </widget>
+    <addaction name="menuMise_jour"/>
+    <addaction name="menuRecherche_Affichage_2"/>
+   </widget>
+   <widget class="QMenu" name="menuMENU_GETION_DES_EMPRUNTS">
+    <property name="title">
+     <string>MENU EMPRUNTS</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_2">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuModifier_Emprunt">
+      <property name="title">
+       <string>Modifier Emprunt</string>
+      </property>
+      <addaction name="separator"/>
+      <addaction name="actionDate_emprunt"/>
+      <addaction name="actionDate_retour"/>
+     </widget>
+     <addaction name="actionAjouter_un_nouvel_emprunt"/>
+     <addaction name="actionRetour_d_un_emprunt"/>
+     <addaction name="actionSupprimer_d_un_emprunt"/>
+     <addaction name="menuModifier_Emprunt"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_affichage">
+     <property name="title">
+      <string>Recherche ,affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnnaire_emprunt"/>
+     <addaction name="actionRecherche_emprunts_par_livre"/>
+     <addaction name="actionRecherche_emprunts_par_tudiant"/>
+     <addaction name="actionRecherche_livres_emprunt_s_une_date_donn_es"/>
+     <addaction name="actionRecherche_livres_retourn_s_une_date_donn_es"/>
+     <addaction name="actionRecherche_livres_emprunt_s_entre_2_dates_donn_es"/>
+     <addaction name="actionRecherche_livres_retourn_s_entre_2_dates_donn_es"/>
+    </widget>
+    <addaction name="menuMise_jour_2"/>
+    <addaction name="menuRecherche_affichage"/>
+   </widget>
+   <widget class="QMenu" name="menuMENU_ENREGISTREMENT">
+    <property name="title">
+     <string>MENU ENREGISTREMENT</string>
+    </property>
+    <addaction name="actionEnregistrement_fichier_tudiants"/>
+    <addaction name="actionR_cup_ration_fichier_tudiants"/>
+    <addaction name="actionEnregistrement_fichier_livres"/>
+    <addaction name="actionR_cup_ration_fichier_livres"/>
+    <addaction name="actionEnregistrement_fichier_emprunts"/>
+    <addaction name="actionR_cup_ration_fichier_emprunts"/>
+   </widget>
+   <addaction name="menudfzf"/>
+   <addaction name="menuMENU_GETION_DES_LIVRES"/>
+   <addaction name="menuMENU_GETION_DES_EMPRUNTS"/>
+   <addaction name="menuMENU_ENREGISTREMENT"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAjouter_tudiant">
+   <property name="text">
+    <string>Ajouter étudiant</string>
+   </property>
+  </action>
+  <action name="actionSuppression_tudiant_donn">
+   <property name="text">
+    <string>Suppression étudiant donné</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_tudiants_d_une_section_donn">
+   <property name="text">
+    <string>Suppression des étudiants d'une section donné</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_tudiants_d_un_niveau_donn">
+   <property name="text">
+    <string>Suppression des étudiants d'un niveau donné</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_tudiants_d_une_section_et_un_niveau">
+   <property name="text">
+    <string>Suppression des étudiants d'une section et un niveau</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnnaire_tudiants">
+   <property name="text">
+    <string>Contenu du dictionnnaire étudiants</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_num_rp_inscription">
+   <property name="text">
+    <string>Recherche par numérp inscription</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section">
+   <property name="text">
+    <string>Recherche par section</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_niveau">
+   <property name="text">
+    <string>Recherche par niveau</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section_et_niveau">
+   <property name="text">
+    <string>Recherche par section et niveau</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_nouvel_livre">
+   <property name="text">
+    <string>Ajouter un nouvel livre</string>
+   </property>
+  </action>
+  <action name="actionSuppression_livre_donn">
+   <property name="text">
+    <string>Suppression livre donné</string>
+   </property>
+  </action>
+  <action name="actionSuppression_livres_d_un_auteur_donn">
+   <property name="text">
+    <string>Suppression livres d'un auteur donné</string>
+   </property>
+  </action>
+  <action name="actionSuppression_livres_d_une_ann_e_donn">
+   <property name="text">
+    <string>Suppression livres d'une année donnée</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnnaire_LIVRE">
+   <property name="text">
+    <string>Contenu du dictionnnaire LIVRE</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_R_f_rence">
+   <property name="text">
+    <string>Recherche par Référence</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_titre">
+   <property name="text">
+    <string>Recherche par titre</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_par_ann_e_dition_donn_e">
+   <property name="text">
+    <string>Recherche livres par année édition donnée</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_d_un_auteur_donn">
+   <property name="text">
+    <string>Recherche livres d'un auteur donné</string>
+   </property>
+  </action>
+  <action name="actionAffichage_des_livres_par_ordre_alphab_tique">
+   <property name="text">
+    <string>Affichage des livres par ordre alphabétique</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_nouvel_emprunt">
+   <property name="text">
+    <string>Ajouter un nouvel emprunt</string>
+   </property>
+  </action>
+  <action name="actionRetour_d_un_emprunt">
+   <property name="text">
+    <string>Retour d'un emprunt</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_d_un_emprunt">
+   <property name="text">
+    <string>Supprimer d'un emprunt</string>
+   </property>
+  </action>
+  <action name="actionDate_emprunt">
+   <property name="text">
+    <string>Date emprunt</string>
+   </property>
+  </action>
+  <action name="actionDate_retour">
+   <property name="text">
+    <string>Date retour</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnnaire_emprunt">
+   <property name="text">
+    <string>Contenu du dictionnnaire emprunt</string>
+   </property>
+  </action>
+  <action name="actionRecherche_emprunts_par_livre">
+   <property name="text">
+    <string>Recherche emprunts par livre</string>
+   </property>
+  </action>
+  <action name="actionRecherche_emprunts_par_tudiant">
+   <property name="text">
+    <string>Recherche emprunts par étudiant</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_emprunt_s_une_date_donn_es">
+   <property name="text">
+    <string>Recherche livres empruntés à une date donnée</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_retourn_s_une_date_donn_es">
+   <property name="text">
+    <string>Recherche livres retournés à une date donnée</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_emprunt_s_entre_2_dates_donn_es">
+   <property name="text">
+    <string>Recherche livres empruntés entre 2 dates données</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_retourn_s_entre_2_dates_donn_es">
+   <property name="text">
+    <string>Recherche livres retournés entre 2 dates données</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_tudiants">
+   <property name="text">
+    <string>Enregistrement fichier étudiants</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_fichier_tudiants">
+   <property name="text">
+    <string>Récupération fichier étudiants</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_livres">
+   <property name="text">
+    <string>Enregistrement fichier livres</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_fichier_livres">
+   <property name="text">
+    <string>Récupération fichier livres</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_emprunts">
+   <property name="text">
+    <string>Enregistrement fichier emprunts</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_fichier_emprunts">
+   <property name="text">
+    <string>Récupération fichier emprunts</string>
+   </property>
+  </action>
+  <action name="actionT_l_phone">
+   <property name="text">
+    <string>Téléphone</string>
+   </property>
+  </action>
+  <action name="actionMail">
+   <property name="text">
+    <string>Mail</string>
+   </property>
+  </action>
+  <action name="actionAdresse">
+   <property name="text">
+    <string>Adresse</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

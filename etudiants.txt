@@ -1,0 +1,11 @@
+00001,Jack,Brown,06/15/1995,789 Pine St,jack.brown@email.com,555-9999,3,Engineering
+1234,John,Doe,01/01/1990,123 Main St,john.doe@email.com,555-1234,1,Computer Science
+14578654,Mlawah,Elyes,30/08/2003,jemmel 5020,elyesmlawah@gmail.com,55067578,2,l1 info
+23874930,Smith,John,05/12/1985,Los Angeles, john.smith@gmail.com,555-1234,3,Bachelor of Science in Computer Science
+24680,Alexander,Johnson,09/05/1993,987 Elm St,alexander.johnson@email.com,555-2468,1,History
+29384756,Garcia,Ana,07/05/1989,654 Pine St Miami, ana.garcia@gmail.com,555-3456,5,Master of Business Administration
+58374629,Lee,David,02/03/1978,789 Oak St New York, david.lee@hotmail.com,555-9876,2,Master of Science in Electrical Engineering
+93847583,Kim,Jin,11/08/1995,321 Elm St Seattle, jin.kim@gmail.com,555-4321,1,Bachelor of Fine Arts in Graphic Design
+93847592,Wong,Maggie,09/06/1990,456 1st Ave San Francisco, maggie.wong@yahoo.com,555-5678,4,Bachelor of Arts in Business Administration
+123,Jane,Smith,12/31/1985,456 Oak St,jane.smith@email.com,555-5678,2,Business Administration
+987,Emily,Taylor,03/20/1998,321 Maple St,emily.taylor@email.com,555-4321,4,Psychology
